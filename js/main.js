@@ -51,7 +51,7 @@ search.addEventListener('keyup', function (e) {
 
 async function getWeather() {
   try {
-    var response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=a57bc4b37891402eb98112911253006&q=${city}&days=3`)
+    var response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=a57bc4b37891402eb98112911253006&q=${city}&days=3`)
     if (!response.ok) {
       throw new Error("City not found");
     }
