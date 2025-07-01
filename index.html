@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Righteous&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Weather</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./logo@2x.png">
+                <span class="span">
+                    <p>Weather</p>
+                    <span>tagline goes here</span>
+                </span>
+
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+
+            
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Live cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> Contact</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container py-5 ">
+            <div class="input row justify-content-center position-relative">
+                <input type="text" placeholder="City Name ......" class="col-md-12  " id="input-search">
+                <button id="submit" class="position-absolute"> Search </button>
+            </div>
+            <div id="all-days" class="row my-5">
+                <div class="col-lg-4 days  ">
+                    <div class="card ">
+                        <div class="card-header d-flex justify-content-between">
+                            <span id="today"></span>
+                            <span id="date-t" ></span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" id="location-t"> </h5>
+                            <span id="degree-t"></span>
+                            <img src="" alt="" id="img-t">
+                            <p class="card-text" id="desc-t"></p>
+                            <div class="info">
+                                <span>
+                                    <i class="fa-solid fa-umbrella"></i>
+                                    <p id="info-h-t"></p>
+                                </span>
+                                <span>
+                                    <i class="fa-solid fa-wind"></i>
+                                    <p id="info-w-t"></p>
+                                </span>
+                                <span>
+                                    <i class="fa-regular fa-compass"></i>
+                                    <p id="info-c-t"></p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 days ">
+                    <div class="card ">
+                        <div class="card-header d-flex justify-content-between">
+                            <span id="tomorrow"></span>
+                            <span id="date-to"></span>
+                        </div>
+                        <div class="card-body">
+                            <img src="" alt="" id="img-to">
+                            <span id="degree-to"></span>
+                            <span id="degree-to-min"></span>
+                            <p class="card-text" id="desc-to"></p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 days ">
+                    <div class="card ">
+                        <div class="card-header d-flex justify-content-between">
+                            <span id="today-oo"></span>
+                            <span id="date-too"></span>
+                        </div>
+                        <div class="card-body">
+                            <img src="" alt="" id="img-too">
+                            <span id="degree-too"></span>
+                            <span id="degree-too-min"></span>
+                            <p class="card-text" id="desc-too"></p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer >
+     <div class="container ">
+  <div class="row">
+     <div class="form col-md-8">
+                <input type="email" placeholder="Enter your email to subscribe"id="input-sub" class="col-12">
+                <button id="submit-sub" class="position-absolute"> Subscribe </button>
+                <p class="mt-5 text-white">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+        <div class="links col-md-4">
+            <ul>
+                <li><a href=""> <i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-google-plus-g"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-pinterest"></i></a></li>
+            </ul>
+        </div>
+  </div>
+     </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
